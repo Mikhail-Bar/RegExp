@@ -8,7 +8,7 @@ import java.util.*;
 public class Test {
     public static void main(String[] args) {
         Group group1 = new Group("Number-1");
-        group1.appendList(new Student("Иванов", 1));
+        group1.appendList(new Student("Иванов", 8));
         group1.appendList(new Student("Петров", 8));
         group1.appendList(new Student("Сидоров", 3));
         group1.appendList(new Student("Барашков", 3));
@@ -99,9 +99,10 @@ class Group {
 
     public void map(){
         Map<Integer, Integer> digits = new HashMap<Integer, Integer>();
-
+        double sum = 0 , count = 0, d = 0;
         for (Student st : studentList) {
-
+            sum = sum + st.getMark();
+            count++;
             if(digits.keySet().contains(st.getMark())){
                 digits.put(st.getMark(),digits.get(st.getMark())+1);
             }else {
@@ -112,5 +113,7 @@ class Group {
 
             System.out.printf("Оценка: %d  Кол-во: %d \n", item.getKey(), item.getValue());
         }
+        d = sum / count;
+        System.out.printf("Средняя оценка:%.1f",d);
     }
 }
