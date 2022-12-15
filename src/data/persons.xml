@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons>
+    <person>
+        <id>1</id>
+        <name>Alex</name>
+        <emails>
+            <email>alex@gmail.com</email>
+            <email>alex@rambler.ru</email>
+        </emails>
+    </person>
+    <person>
+        <id>2</id>
+        <name>Vlad</name>
+        <emails>
+            <email>alex@gmail.com</email>
+            <email>alex@rambler.ru</email>
+        </emails>
+    </person>
+    <person>
+        <id>3</id>
+        <name>Mikhail</name>
+        <emails>
+            <email>alex@gmail.com</email>
+            <email>alex@rambler.ru</email>
+        </emails>
+    </person>
+</persons>
